@@ -3,9 +3,9 @@
   hosts: localhost
   
   vars_files:
-  - 
+  - lookupdate.yml    # this file defines the var lookupdate
   
   tasks:
   - name: Run a debug task
     debug:
-      msg: "The current value of {{ }}"
+      msg: "The current value of {{ lookupdate }}"  # lookupdate has the format YYYY-MM-DD
