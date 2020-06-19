@@ -1,0 +1,11 @@
+---
+- name: Test Playbook
+  hosts: localhost
+  
+  vars_files:
+  - 
+  
+  tasks:
+  - name: Run a debug task
+    debug:
+      msg: "The current value of {{ }}"
