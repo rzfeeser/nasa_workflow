@@ -1,5 +1,5 @@
 ---
-- name: APOD playbook
+- name: APOD playbook that will be run by Jenkins
   hosts: localhost
   
   vars_files:
