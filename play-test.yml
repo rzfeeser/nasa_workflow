@@ -3,7 +3,7 @@
   hosts: localhost
   
   vars_files:
-  - lookupdate.yml    # this file defines the var lookupdate
+  - lookupdate.yml
   
   tasks:
   - name: Run a debug task
