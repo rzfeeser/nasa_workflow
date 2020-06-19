@@ -1,0 +1,14 @@
+---
+- name: APOD playbook
+  hosts: localhost
+  
+  vars_files:
+      - lookupdate.yml  ## this file contains the date to be looked up
+
+  tasks:
+      # Obtain APOD from January 01, 2019 in low res.
+      - name: Lookup the NASA APOD API for 2019-01-01 in std def
+        nasa_apod:
+          apikey: DEMO_KEY
+          date: "{{ lookupdate }}"  # Date should be surrounded in quotes
+          hd: false
